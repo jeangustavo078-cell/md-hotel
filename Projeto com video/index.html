@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="assets/img/ico.png" type="image/x-icon" />
+    <title>MD Hotel</title>
+  </head>
+  <body>
+    <!--CABEÇALHO-->
+    <header class="header">
+      <nav>
+        <div class="navbar_container">
+          <a href="#" class="navbar_logo">
+            <img src="assets/img/logo.png" alt="logo" />
+          </a>
+
+          <!--Links de navegação-->
+          <ul class="navbar_links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Acomodações</a></li>
+            <li><a href="#">Restaurante</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+          <!--menu mobile-->
+          <ul class="navbar_links" id="mobileMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Acomodações</a></li>
+            <li><a href="#">Restaurante</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+
+          <!--Busca-->
+          <div class="search-box">
+            <button class="search" aria-label="botão pesquisar">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <input type="text" placeholder="Pesquisar..." />
+          </div>
+
+          <!-- Seletor de idioma -->
+          <div class="language-selector">
+            <ion-icon name="globe-outline" class="lang-icon"></ion-icon>
+            <select class="lang-select" onchange="location = this.value;">
+              <option value="index.html" selected>BR</option>
+              <option value="index-en.html">EN</option>
+            </select>
+          </div>
+
+          <!--Botão mobile-->
+          <button class="navbar_toggle" aria-label="menu mobile">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <video src="assets/videos/banner.mp4" autoplay muted loop></video>
+      <div class="section_container hero_container">
+        <h1>Conforto e Elegância <br />em cada Detalhe</h1>
+        <button class="btn">Reservar</button>
+      </div>
+    </section>
+    
+    <!--RESERVA -->
+    <section class="reserva">
+      <div class="reserva-container">
+        <div class="input-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <input type="text" placeholder="Check-in" />
+        </div>
+        <div class="input-box">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <input type="text" placeholder="Check-out" />
+        </div>
+        <div class="input-box">
+          <ion-icon name="person-outline"></ion-icon>
+          <select>
+            <option disabled>nº de Adultos</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <button class="btn">reservar</button>
+      </div>
+    </section>
+
+    <!--SOBRE NÓS-->
+      <div class="about-container">
+
+        <!--Coluna da esquerda-->
+        <div class="about-grid">
+
+          <!--Coluna 1-->
+          <div class="about_column">
+            <div class="about-card">
+              <img src="assets/img/quarto.jpg" alt="quarto de hotel">
+            </div>
+            <div class="about-card">
+              <img src="assets/img/restaurante.jpg" alt="restaurante do hotel">
+            </div>
+          </div>
+
+          <!--Coluna 2-->
+          <div class="about_column">
+            <div class="about-card">
+              <img src="assets/img/academia.jpg" alt="academia do hotel">
+            </div>
+            <div class="about-card">
+              <img src="assets/img/fachada.jpg" alt="fachada do hotel">
+            </div>
+          </div>
+
+        </div>
+
+        <!--Coluna da direita-->
+        <div class="about-content">
+          <p class="section-subheader">Sobre nós</p>
+          <h2 class="section-header">Descubra o nosso paraíso</h2>
+          <p class="section-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat vitae quod reprehenderit consequatur quasi voluptate. Ipsa, fuga corrupti, vitae culpa id, obcaecati quod laudantium non consequatur ducimus at expedita dolore?
+          </p>
+          <button class="btn">reservar</button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Equipe Sobre -->
+    <section class="equipe">
+      <div class="container">
+        <div class="titulo-secao">
+          <h2>Conheça Nossa Equipe</h2>
+          <p>
+            Profissionais dedicados que fazem a diferença na sua experiência
+          </p>
+        </div>
+
+        <div class="cards-equipe">
+          <!-- Membro 1 -->
+          <article class="card membro1">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>The Rock</h3>
+            <p>Gerente de hospitalidade, sempre atento a cada detalhe.</p>
+          </article>
+
+          <!-- Membro 2 -->
+          <article class="card membro2">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>Chris Hemsworth</h3>
+            <p>
+              Chef internacional, responsável pela alta gastronomia do hotel.
+            </p>
+          </article>
+
+          <!-- Membro 3 -->
+          <article class="card membro3">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>Henry Cavill</h3>
+            <p>
+              Coordenador de eventos, transforma cada ocasião em uma experiência
+              única.
+            </p>
+          </article>
+
+          <!-- Membro 4 -->
+          <article class="card membro4">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>Emma Watson</h3>
+            <p>Relações públicas e responsável pela experiência do hóspede.</p>
+          </article>
+
+          <!-- Membro 5 -->
+          <article class="card membro5">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>Gal Gadot</h3>
+            <p>
+              Gestora de marketing, responsável pela imagem e divulgação do
+              hotel.
+            </p>
+          </article>
+
+          <!-- Membro 6 -->
+          <article class="card membro6">
+            <div class="avatar">
+              <div class="overlay">
+                <div class="social">
+                  <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+              </div>
+            </div>
+            <h3>Jason Momoa</h3>
+            <p>
+              Responsável pela sustentabilidade e gestão ambiental do resort.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+
+    <!--IONICONS-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
