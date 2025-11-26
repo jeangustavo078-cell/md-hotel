@@ -340,7 +340,7 @@ header {
     rgba(255, 255, 255, 0.9),
     rgba(255, 255, 255, 0.6)
   ),
-  url("../img/about_background.jpg");
+  url("../img/imgfundo.jpg");
   background-size: cover;
   background-position: center; 
   padding-block: 6rem;
@@ -399,7 +399,7 @@ header {
   transform: scale(1.05);
 }
 
-.btn {
+.btn, .btn-reservar {
   background: var(--gradient);
   padding: 0.7rem 2.5rem;
   font-weight: bold;
@@ -617,7 +617,7 @@ header {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1292px) {
   .navbar_container {
     transform: none !important;
     height: 80px;
